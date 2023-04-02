@@ -167,7 +167,7 @@ td {
 .left-body .overview {
      padding: 4px 4px 4px 4px;
      height: 110px;
-     font-size: 2.5vw;
+     font-size: 1.5vw;
      overflow: hidden;
      background-color: #f9db77;
      position: absolute;
@@ -190,7 +190,6 @@ td {
      font-size: 2.5vw;
 }
 }
-
 
 @media only screen and (max-width: 460px) {
 .content{
@@ -216,7 +215,7 @@ td {
 .left-body .overview {
      padding: 4px 4px 4px 4px;
      height: 105px;
-     font-size: 2.5vw;
+     font-size: 1.5vw;
      overflow: hidden;
      background-color: #f9db77;
      position: absolute;
