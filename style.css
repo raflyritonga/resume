@@ -1,0 +1,242 @@
+*,html,body{
+     margin: 0;
+     padding: 0;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     line-height: 1.5;
+}
+
+body{
+     background-color: #d4d4d4;
+}
+
+a {
+     color: black;
+     text-decoration: none;
+}
+
+a:hover {
+     color: rgb(13, 13, 145);
+}
+
+/* GENERAL */
+.container{
+     width: 100%;
+     margin: auto;
+     position: relative;
+}
+
+.content{
+     width: 70%;
+     height: fit-content;
+     position: absolute;
+     top: 5%;
+     left: 17%;
+     overflow: hidden;
+     display: grid;
+     grid-template-columns: 30% 70%;
+     background-color: #fdfffc;
+}
+
+/* lEFT */
+.left-body{
+     background-color: #f9db77;
+     width: 100%;
+     height: 100%;
+}
+.left-body .photo{
+     width: 100%;
+     height: 25%;
+     background-image: url(./assets/photo.png);
+     background-position: center;  
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.left-body .overview {
+     padding: 2% 0 0 3%;
+     font-size: 1.4vw;
+}
+
+.left-body .overview > ul > li{
+     padding-left: 2%;
+}
+
+.left-body .overview> ul{
+     display: flex;
+     list-style-type: none;
+}
+
+.left-body .overview > p{
+     padding: 2% 5% 0 3%;
+     font-size: 1.4vw;
+     text-align: justify;
+     margin-bottom: 1%;
+}
+
+/* RIGHT */
+.right-body {
+     width: 100%;
+     height: 100%;
+     text-align: center;
+}
+
+.right-body .bio > h1{
+     font-size: 3vw;
+}
+
+.right-body > ul {
+
+     list-style-type: none;
+     width: 100%;
+     padding: 2% 5% 0 3%;
+     font-size: 1.3vw;
+     text-align: justify;
+     margin-bottom: 3%;
+}
+
+.right-body > ul > li {
+     width: 100%;
+     background-color: #003566;
+     padding: 1%;
+     font-size: 18px;
+     margin-bottom: 1%;
+     color: #fdfffc;
+}
+
+.right-body > ul > table {
+     width: 95%;
+     font-size: 1.3vw;
+     text-align: left;
+     padding-left: 2%;
+     margin-bottom: 1%;
+     margin-left: 1%;
+}
+
+td {
+     padding-left: 5px;
+}
+
+.right-body > ul > ul {
+     margin-bottom: 1%;
+     width: 95%;
+     text-align: justify;
+}
+
+.right-body > ul > ul > li {
+     list-style-type: none;
+     font-size: 1.4vw;
+     padding-left: 2%;
+}
+
+@media only screen and (max-width: 950px) {
+     .content{
+          width: 95%;
+          height: 130vh;
+          top: 0 ;
+          left: 2.5%;   
+          align-items: center;
+     } 
+     .left-body .photo{
+          background-position-y: -80px;
+     }
+
+}
+
+@media only screen and (max-width: 720px) {
+.content{
+     width: 100%;
+     height: 100vh;
+     top: 0 ;
+     left: 0;
+     overflow-y: scroll;
+     overflow-x: hidden;
+     display: block;    
+} 
+.left-body {
+     width: 100%;
+     height: 70%;
+
+}
+
+.left-body .photo{
+     width: 100%;
+     height: 100%;
+     background-attachment: fixed;
+     background-position-y: -230px;
+}
+.left-body .overview {
+     padding: 4px 4px 4px 4px;
+     height: 110px;
+     font-size: 2.5vw;
+     overflow: hidden;
+     background-color: #f9db77;
+     position: absolute;
+     top: 320px;
+     width: 80%;
+
+}
+.left-body .overview > p{
+     font-size: 2.5vw;
+}
+.right-body {
+     display: block;
+     height: 95%;
+}
+.right-body > ul {
+     width: 100%;
+     padding: 2% 5% 0 0%;
+}
+.right-body > ul > ul > li {
+     font-size: 2.5vw;
+}
+}
+
+
+@media only screen and (max-width: 460px) {
+.content{
+     width: 100%;
+     height: 110vh;
+     top: 0 ;
+     left: 0;
+     overflow-y: scroll;
+     overflow-x: hidden;
+     display: block;    
+} 
+.left-body {
+     width: 100%;
+     height: 70%;
+
+}
+.left-body .photo{
+     width: 100%;
+     height: 100%;
+     background-attachment: fixed;
+     background-position-y: -120px;
+}
+.left-body .overview {
+     padding: 4px 4px 4px 4px;
+     height: 105px;
+     font-size: 2.5vw;
+     overflow: hidden;
+     background-color: #f9db77;
+     position: absolute;
+     top: 320px;
+     width: 80%;
+
+}
+.left-body .overview > p{
+     font-size: 2.5vw;
+}
+.right-body {
+     display: block;
+     height: 95%;
+}
+.right-body > ul {
+     width: 100%;
+     padding: 2% 5% 0 0%;
+}
+.right-body > ul > ul > li {
+     font-size: 2.5vw;
+}
+
+}
